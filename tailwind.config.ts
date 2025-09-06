@@ -47,6 +47,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        chat: {
+          "user-bg": "hsl(var(--chat-user-bg))",
+          "user-text": "hsl(var(--chat-user-text))",
+          "bot-bg": "hsl(var(--chat-bot-bg))",
+          "bot-text": "hsl(var(--chat-bot-text))",
+        },
+        ebook: {
+          bg: "hsl(var(--ebook-bg))",
+          text: "hsl(var(--ebook-text))",
+          sidebar: "hsl(var(--ebook-sidebar))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +73,11 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        large: "var(--shadow-large)",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +96,16 @@ export default {
             height: "0",
           },
         },
+        "typing": {
+          "0%": { opacity: "0.4" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0.4" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "typing": "typing 1.4s infinite ease-in-out",
       },
     },
   },
