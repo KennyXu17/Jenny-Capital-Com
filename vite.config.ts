@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/Jenny-Capital-Com/",   // 👈 必须加上这行，仓库名
   server: {
     host: "::",
     port: 8080,
